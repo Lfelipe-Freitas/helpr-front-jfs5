@@ -20,8 +20,9 @@ const routes: Routes = [
     path: 'chamados',
     loadChildren: () => import('./views/chamados/chamados.module').then(m => m.ChamadosModule)
   },
-  { path: 'funcionarios', 
-  loadChildren: () => import('./views/funcionario/funcionario.module').then(m => m.FuncionarioModule) 
+  { 
+    path: 'funcionarios', 
+    loadChildren: () => import('./views/funcionario/funcionario.module').then(m => m.FuncionarioModule) 
   }
 ];
 
